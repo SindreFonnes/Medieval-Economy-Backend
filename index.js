@@ -1,6 +1,7 @@
 const WebSocket = require('ws');
 const fs = require('fs');
 const path = require('path');
+const endturnfile = require('./endturn')
 
 const wss = new WebSocket.Server({ port: 8888 });
 
@@ -83,7 +84,7 @@ wss.on('connection', function connection(ws) {
         } catch (err) {
             console.log(err)
         }
-        
+
         if (message.type === 0) {
             console.log(message.content)
         }
@@ -91,7 +92,21 @@ wss.on('connection', function connection(ws) {
         if (message.type === 1) {
             //end turn
             data = message.content
-            console.log("Data recived!")
+            data = endturnfile.endturn(message.days,data, ()=>{
+                console.log('Ended turn, ' + message.days + ' days have passed.')
+            })
+            let date = new Date();
+            log.push('Ended turn, ' + message.days + ' days have passed.; time: ' + date)
+            saveToDataFile()
+            let response = {
+                type: 0,
+                content: [
+                    data,
+                    log
+                ]
+            }
+            sendData(response)
+            
         }
 
         if (message.type === 2) {
