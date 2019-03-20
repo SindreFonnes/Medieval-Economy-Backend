@@ -1,0 +1,443 @@
+{
+    "date": 0,
+    "taxrate": 0.3,
+    "tasks": [
+        {
+            "name": "Chop lumber",
+            "id": "A99kEOHqo",
+            "type": 0,
+            "resourceexploited": "jqkt1lhYX",
+            "amountofworkers": 0,
+            "hasmaxworkers": false,
+            "maxamountofworkers": 0,
+            "productionperworker": 17,
+            "efficency": 1,
+            "hasaduration": false,
+            "duration": 0,
+            "taskresults": "",
+            "hasrevenueorupkeep": true,
+            "revenueorupkeep": 10,
+            "gainwares": true,
+            "wareusedinmanufacture": "",
+            "waregainedfrommanufacture": "",
+            "structureworkedon": "",
+            "manufacturemodifier": 1
+        }
+    ],
+    "citiesanddivisions": [
+        {
+            "id": "0001",
+            "name": "Winter's Reach",
+            "iscity": true,
+            "complexes": [
+                {
+                    "name": "Castle grounds",
+                    "id": "Lbg8ekZAP",
+                    "description": "",
+                    "location": "0001",
+                    "structures": []
+                }
+            ]
+        }
+    ],
+    "events": [],
+    "professions": [
+        {
+            "name": "Lumberjack",
+            "id": "EIHutplge",
+            "description": "",
+            "type": "Laborer",
+            "workhours": "14",
+            "revenueorupkeep": 10
+        }
+    ],
+    "professiontypes": [
+        "Laborer",
+        "Craftsman",
+        "Professional",
+        "Salesman",
+        "Servant",
+        "Warrior",
+        "Artist",
+        "Upper Class"
+    ],
+    "citizens": [
+        {
+            "id": "-mjiJeBUo",
+            "age": 16,
+            "name": "Teriann",
+            "surname": "Plantagenet",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "A99kEOHqo",
+            "available": true
+        },
+        {
+            "id": "4umLNu8EHL",
+            "age": 27,
+            "name": "Amity",
+            "surname": "Orwin",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "A99kEOHqo",
+            "available": true
+        },
+        {
+            "id": "B3S_VpUtrW",
+            "age": 19,
+            "name": "Pearline",
+            "surname": "Basia",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "A99kEOHqo",
+            "available": true
+        },
+        {
+            "id": "HUdkwzfvV",
+            "age": 30,
+            "name": "Charity",
+            "surname": "Barger",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "A99kEOHqo",
+            "available": true
+        },
+        {
+            "id": "waPt0dToBN",
+            "age": 24,
+            "name": "Claude",
+            "surname": "Mandell",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "A99kEOHqo",
+            "available": true
+        },
+        {
+            "id": "4OU7macSq_",
+            "age": 27,
+            "name": "Gillan",
+            "surname": "Lizbeth",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "9GAlCLnXDh",
+            "age": 20,
+            "name": "Aurilia",
+            "surname": "Gare",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "2a_vru7HR",
+            "age": 23,
+            "name": "Matti",
+            "surname": "Thatcher",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "kDQbhmK_G0",
+            "age": 19,
+            "name": "Kristina",
+            "surname": "Zawde",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "IO4I9-mWRH",
+            "age": 26,
+            "name": "Jemimah",
+            "surname": "Lord",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "95OmEXfsx",
+            "age": 16,
+            "name": "Patty",
+            "surname": "Damita",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "BgBM-hu7Id",
+            "age": 39,
+            "name": "Carly",
+            "surname": "Wes",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "nFbx5yLI-n",
+            "age": 25,
+            "name": "Daffi",
+            "surname": "Lingwood",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "CqLeTZgQRe",
+            "age": 33,
+            "name": "Jyoti",
+            "surname": "Ashlee",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "G6qZubGxb",
+            "age": 15,
+            "name": "Rosalie",
+            "surname": "Karyl",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "JRWg9o2Yb_",
+            "age": 36,
+            "name": "Kathlin",
+            "surname": "Macur",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "y9UtLPRVFo",
+            "age": 31,
+            "name": "Eirena",
+            "surname": "Marie-Jeanne",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "V3CsNGSyD",
+            "age": 27,
+            "name": "Manon",
+            "surname": "Benenson",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "2Pts1YKJ7M",
+            "age": 22,
+            "name": "Jaymee",
+            "surname": "Damle",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        },
+        {
+            "id": "iBn91bj4MT",
+            "age": 29,
+            "name": "Ivette",
+            "surname": "Carleen",
+            "cityordivision": "0001",
+            "profession": "EIHutplge",
+            "task": "",
+            "available": true
+        }
+    ],
+    "resources": [
+        {
+            "name": "Woods",
+            "id": "jqkt1lhYX",
+            "city": "0001",
+            "description": "",
+            "producedgood": "",
+            "isfiniteresource": false,
+            "resourceamount": 0,
+            "isbeingexploited": false,
+            "warewhenexploited": "c5X4lV8jQ",
+            "resourceexploitationmodifier": 1,
+            "price": null,
+            "productionperworker": null,
+            "maxworkers": null,
+            "resourceexploited": true
+        },
+        {
+            "name": "Quarry",
+            "id": "JwjEX4e9j",
+            "city": "0001",
+            "description": "",
+            "producedgood": "",
+            "isfiniteresource": true,
+            "resourceamount": 2000000,
+            "isbeingexploited": false,
+            "warewhenexploited": "qWzqJYcbI",
+            "resourceexploitationmodifier": 1,
+            "price": null,
+            "productionperworker": null,
+            "maxworkers": null
+        }
+    ],
+    "structuredesigns": [
+        {
+            "id": "r885z2NqD",
+            "name": "Castle",
+            "description": "",
+            "timepercubicmeter": 5,
+            "measureunit": "cubic meters",
+            "needsmaterials": true,
+            "buildingmaterials": [
+                {
+                    "id": "c5X4lV8jQ",
+                    "amountneeded": "1"
+                },
+                {
+                    "id": "qWzqJYcbI",
+                    "amountneeded": "100"
+                },
+                {
+                    "id": "sHiqo4nVi",
+                    "amountneeded": "3"
+                },
+                {
+                    "id": "e9de1gJin",
+                    "amountneeded": "2"
+                }
+            ]
+        }
+    ],
+    "structures": [
+        {
+            "id": "HPTarONiv",
+            "name": "Castle black",
+            "designused": "r885z2NqD",
+            "description": "",
+            "owner": "",
+            "designatedcomplex": "Lbg8ekZAP",
+            "groundcovered": {
+                "x": 100,
+                "y": 60,
+                "z": 20
+            },
+            "size": 120000,
+            "spaceused": 0.5,
+            "materialsneeded": [
+                {
+                    "id": "c5X4lV8jQ",
+                    "amountneeded": 60000
+                },
+                {
+                    "id": "qWzqJYcbI",
+                    "amountneeded": 6000000
+                },
+                {
+                    "id": "sHiqo4nVi",
+                    "amountneeded": 180000
+                },
+                {
+                    "id": "e9de1gJin",
+                    "amountneeded": 120000
+                }
+            ],
+            "isinhabitable": true,
+            "maxoccupants": "30",
+            "currentoccupants": [],
+            "workhoursneeded": 300000,
+            "underconstruction": true
+        }
+    ],
+    "complexes": [
+        {
+            "name": "Castle grounds",
+            "id": "Lbg8ekZAP",
+            "description": "",
+            "location": "0001",
+            "structures": []
+        }
+    ],
+    "wares": [
+        {
+            "id": "c5X4lV8jQ",
+            "name": "Lumber",
+            "description": "",
+            "price": 10,
+            "unit": "cubic meters",
+            "amountowned": 0,
+            "buildingmaterial": true
+        },
+        {
+            "id": "qWzqJYcbI",
+            "name": "Stone",
+            "description": "",
+            "price": 20,
+            "unit": "cubic meters",
+            "amountowned": 0,
+            "buildingmaterial": true
+        },
+        {
+            "id": "sHiqo4nVi",
+            "name": "Mortar",
+            "description": "",
+            "price": 5,
+            "unit": "cubic meters",
+            "amountowned": 0,
+            "buildingmaterial": true
+        },
+        {
+            "id": "e9de1gJin",
+            "name": "Planks",
+            "description": "",
+            "price": 15,
+            "unit": "cubic meters",
+            "amountowned": 0,
+            "buildingmaterial": true
+        }
+    ],
+    "units": [
+        "cubic meters",
+        "square meters",
+        "liters",
+        "kilograms"
+    ],
+    "tasktypes": [
+        {
+            "id": 0,
+            "name": "exploit resource"
+        },
+        {
+            "id": 1,
+            "name": "build structure"
+        },
+        {
+            "id": 2,
+            "name": "build vehicle"
+        },
+        {
+            "id": 3,
+            "name": "manufacture goods"
+        },
+        {
+            "id": 4,
+            "name": "custom task"
+        }
+    ],
+    "vehicles": []
+}
