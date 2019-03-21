@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 const fs = require('fs');
 const path = require('path');
-const endturnfile = require('./endturn')
+const endturn = require('./endturn')
 
 const wss = new WebSocket.Server({ port: 8888 });
 
@@ -90,14 +90,19 @@ wss.on('connection', function connection(ws) {
         }
 
         if (message.type === 1) {
+            makeBackupFile(() => {
+                console.log('Backupfile made!')
+            })
             //end turn
             data = message.content
-            data = endturnfile.endturn(message.days,data, ()=>{
-                console.log('Ended turn, ' + message.days + ' days have passed.')
+            data = endturn(message.dayspassed,data, ()=>{
+                console.log('Ended turn, ' + message.dayspassed + ' days have passed.')
             })
             let date = new Date();
-            log.push('Ended turn, ' + message.days + ' days have passed.; time: ' + date)
-            saveToDataFile()
+            log.push('Ended turn, ' + message.dayspassed + ' days have passed.; time: ' + date)
+            saveToDataFile(() => {
+                console.log('Data saved')
+            })
             let response = {
                 type: 0,
                 content: [
@@ -107,10 +112,14 @@ wss.on('connection', function connection(ws) {
             }
             sendData(response)
             
+            
         }
 
         if (message.type === 2) {
             //data sync
+            makeBackupFile(() => {
+                console.log('Backupfile made!')
+            })
             data = message.content
             saveToDataFile(() => {
                 console.log("Data synced!")
