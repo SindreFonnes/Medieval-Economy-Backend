@@ -1,5 +1,5 @@
 {
-    "date": 133,
+    "date": "133",
     "money": 306812.1999999995,
     "taxrate": 0.3,
     "tasks": [
@@ -196,7 +196,7 @@
             "id": "BxgVY4eaY",
             "description": "",
             "type": "Craftsman",
-            "workhours": 8,
+            "workhours": "8",
             "revenueorupkeep": 250
         },
         {
@@ -204,7 +204,7 @@
             "id": "_JyMDTkqp",
             "description": "",
             "type": "Craftsman",
-            "workhours": 8,
+            "workhours": "8",
             "revenueorupkeep": 30
         },
         {
@@ -212,7 +212,7 @@
             "id": "9aUOykt1z",
             "description": "",
             "type": "Craftsman",
-            "workhours": 8,
+            "workhours": "8",
             "revenueorupkeep": 50
         },
         {
@@ -220,7 +220,7 @@
             "id": "fpk3uHkus",
             "description": "",
             "type": "Warrior",
-            "workhours": 10,
+            "workhours": "10",
             "revenueorupkeep": -50
         },
         {
@@ -228,7 +228,7 @@
             "id": "rA_arhvru",
             "description": "",
             "type": "Warrior",
-            "workhours": 8,
+            "workhours": "8",
             "revenueorupkeep": -300
         },
         {
@@ -236,7 +236,7 @@
             "id": "uNG7lzIPp",
             "description": "",
             "type": "Salesman",
-            "workhours": 8,
+            "workhours": "8",
             "revenueorupkeep": 60
         },
         {
@@ -244,7 +244,7 @@
             "id": "NKrVKwhfN",
             "description": "",
             "type": "Professional",
-            "workhours": 8,
+            "workhours": "8",
             "revenueorupkeep": 0
         },
         {
@@ -252,7 +252,7 @@
             "id": "ekOFt_-VZ",
             "description": "",
             "type": "Laborer",
-            "workhours": 10,
+            "workhours": "10",
             "revenueorupkeep": 10
         },
         {
@@ -260,7 +260,7 @@
             "id": "zhKupmyz9",
             "description": "",
             "type": "Laborer",
-            "workhours": 24,
+            "workhours": "24",
             "revenueorupkeep": 0
         },
         {
@@ -268,7 +268,7 @@
             "id": "0Jo8jzGQV",
             "description": "",
             "type": "Laborer",
-            "workhours": 10,
+            "workhours": "10",
             "revenueorupkeep": 10
         },
         {
@@ -276,7 +276,7 @@
             "id": "B-ClC136k",
             "description": "",
             "type": "Warrior",
-            "workhours": 8,
+            "workhours": "8",
             "revenueorupkeep": 80
         },
         {
@@ -284,7 +284,7 @@
             "id": "Ye9DFrd2l",
             "description": "",
             "type": "Laborer",
-            "workhours": 10,
+            "workhours": "10",
             "revenueorupkeep": 12
         }
     ],

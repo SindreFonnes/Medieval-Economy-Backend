@@ -3,6 +3,7 @@ function endturn(days, data, func){
         data.money += MoneyChangeFromCitizenProfessions(data)
         data.money += TaskExpenses(data)
         data = AddWaresGainedFromTasks(data)
+        data.date ++;
     }
     func();
     return data;
