@@ -74,12 +74,12 @@ function ProgressOnBuildingTasks(data){
         if(data.tasks[i].type == 1 && data.tasks[i].workers.length>0) {
             let hoursworked = 0;
             for(let j = 0; j < data.tasks[i].workers.length; j++){
-                hoursworked += data.professions.find(t => t.id == data.tasks[i].workers[j].profession).workhours*data.tasks[i].efficency;
+                hoursworked += data.professions.find(t => t.id == data.citizens.find(c => c.id == data.tasks[i].workers[j]).profession).workhours*data.tasks[i].efficency;
             }
-            if(data.structures.find(t => t.id == data.tasks[i].structureworkedon).workhoursneeded > hoursworked){
+            if(data.structures.find(t => t.id == data.tasks[i].structureworkedon).workhoursneeded < hoursworked){
                 hoursworked = data.structures.find(t => t.id == data.tasks[i].structureworkedon).workhoursneeded;
-                data.structures.find(t => t.id == data.tasks[i].structureworkedon).underConstruction = false;
-                finishedtask.push(i)
+                data.structures.find(t => t.id == data.tasks[i].structureworkedon).underconstruction = false;
+                finishedtask.push(data.tasks[i].id)
                 for(let m = 0; m < data.citizens.length; m++){
                     if(data.citizens[m].task == data.tasks[i].id){
                         data.citizens[m].task = ""
@@ -88,10 +88,10 @@ function ProgressOnBuildingTasks(data){
             }
             data.structures.find(t => t.id == data.tasks[i].structureworkedon).workhoursneeded -= hoursworked;
             for(let k = 0; k < data.structures.find(t => t.id == data.tasks[i].structureworkedon).materialsneeded.length; k++){
-                data.structures.find(t => t.id == data.tasks[i].structureworkedon).materialsneeded[k].amountneeded -= data.structuredesigns.find(t => t.id == data.structures.find(p => p.id == data.tasks[i].structureworkedon)).buildingmaterials[k].amountneeded*hoursworked;
+                data.structures.find(t => t.id == data.tasks[i].structureworkedon).materialsneeded[k].amountneeded -= data.structuredesigns.find(t => t.id == data.structures.find(p => p.id == data.tasks[i].structureworkedon).designused).buildingmaterials[k].amountneeded*hoursworked;
                 for(let x = 0; x < data.wares.length; x++){
                     if(data.wares[x].id == data.structures.find(t => t.id == data.tasks[i].structureworkedon).materialsneeded[k].id) {
-                        data.wares[x].amountowned -= data.structuredesigns.find(t => t.id == data.structures.find(p => p.id == data.tasks[i].structureworkedon)).buildingmaterials[k].amountneeded*hoursworked;
+                        data.wares[x].amountowned -= data.structuredesigns.find(t => t.id == data.structures.find(p => p.id == data.tasks[i].structureworkedon).designused).buildingmaterials[k].amountneeded*hoursworked;
                     }
                 }
             }
@@ -100,8 +100,10 @@ function ProgressOnBuildingTasks(data){
 
     if(finishedtask.length > 0){
         for(let i = 0; i < data.tasks.length; i++){
-            if(i == finishedtask[i]) {
-                data.tasks = data.tasks.filter(t => t.id != data.tasks[i].id)
+            for(let j = 0; j<finishedtask.length; j++){
+                if(data.tasks[i].id == finishedtask[j]) {
+                    data.tasks = data.tasks.filter(t => t.id != data.tasks[i].id)
+                }
             }
         }
     }
