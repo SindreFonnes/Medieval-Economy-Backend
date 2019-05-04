@@ -52,8 +52,6 @@ function AddWaresGainedFromTasks(data){
             }
         }
         if(data.tasks[i].type == 3&&data.tasks[i].gainwares) {
-            console.log('yes')
-            console.log(data.tasks[i].productionperworker + ' ' + data.tasks[i].workers.length + ' ' + data.tasks[i].manufacturemodifier)
             data.wares.find(t => t.id == data.tasks[i].wareusedinmanufacture).amountowned -= (data.tasks[i].productionperworker * data.tasks[i].workers.length)/data.tasks[i].manufacturemodifier
             data.wares.find(t => t.id == data.tasks[i].waregainedfrommanufacture).amountowned += data.tasks[i].productionperworker * data.tasks[i].workers.length * data.tasks[i].efficency
             if(data.wares.find(t => t.id == data.tasks[i].wareusedinmanufacture).amountowned<0) {
@@ -62,7 +60,6 @@ function AddWaresGainedFromTasks(data){
             }
         }
     }
-    //console.log(data.wares)
     return data;
 }
 

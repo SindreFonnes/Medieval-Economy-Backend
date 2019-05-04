@@ -68,7 +68,7 @@ function makeBackupFile(func) {
         
         func();
     })
-    console.log('Saved!');
+    console.log('Backupfile made!');
 }
 
 wss.on('connection', function connection(ws) {
@@ -91,7 +91,7 @@ wss.on('connection', function connection(ws) {
 
         if (message.type === 1) {
             makeBackupFile(() => {
-                console.log('Backupfile made!')
+                console.log('')
             })
             //end turn
             data = message.content
@@ -118,7 +118,7 @@ wss.on('connection', function connection(ws) {
         if (message.type === 2) {
             //data sync
             makeBackupFile(() => {
-                console.log('Backupfile made!')
+                console.log('')
             })
             data = message.content
             saveToDataFile(() => {
@@ -143,7 +143,7 @@ wss.on('connection', function connection(ws) {
 
         if (message.type === 4) {
             makeBackupFile(() => {
-                console.log('Backupfile made!')
+                console.log('')
             })
         }
     });
