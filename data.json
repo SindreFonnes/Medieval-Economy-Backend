@@ -3392,7 +3392,7 @@
             "description": "processed lumber",
             "price": 3.5,
             "unit": "cubic meters",
-            "amountowned": 61300,
+            "amountowned": 0,
             "buildingmaterial": true
         },
         {
