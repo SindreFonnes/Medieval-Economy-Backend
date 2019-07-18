@@ -1,6 +1,6 @@
 {
-    "date": 149,
-    "money": 306611.1999999994,
+    "date": 151,
+    "money": 306532.3999999993,
     "taxrate": 0.3,
     "tasks": [
         {
@@ -3328,7 +3328,7 @@
             "description": "",
             "isfiniteresource": false,
             "resourceamount": 0,
-            "isbeingexploited": false,
+            "isbeingexploited": true,
             "warewhenexploited": "kthCbXV8H",
             "resourceexploitationmodifier": 1,
             "price": null,
@@ -3342,8 +3342,8 @@
             "city": "0001",
             "description": "",
             "isfiniteresource": true,
-            "resourceamount": 6204180,
-            "isbeingexploited": false,
+            "resourceamount": 6199860,
+            "isbeingexploited": true,
             "warewhenexploited": "HTfriVWQn",
             "resourceexploitationmodifier": 1,
             "price": null,
@@ -3357,8 +3357,8 @@
             "city": "0001",
             "description": "",
             "isfiniteresource": true,
-            "resourceamount": 919,
-            "isbeingexploited": false,
+            "resourceamount": 879,
+            "isbeingexploited": true,
             "warewhenexploited": "BmRhmxFtg",
             "resourceexploitationmodifier": "1",
             "price": null,
@@ -3373,7 +3373,7 @@
             "description": "",
             "isfiniteresource": false,
             "resourceamount": 0,
-            "isbeingexploited": false,
+            "isbeingexploited": true,
             "warewhenexploited": "Tu5z49ZjF",
             "resourceexploitationmodifier": 1,
             "price": null,
@@ -3392,7 +3392,7 @@
             "description": "processed lumber",
             "price": 3.5,
             "unit": "cubic meters",
-            "amountowned": 0,
+            "amountowned": 16000,
             "buildingmaterial": true
         },
         {
@@ -3401,7 +3401,7 @@
             "description": "heated clay",
             "price": 0.4,
             "unit": "cubic meters",
-            "amountowned": 83920,
+            "amountowned": 88240,
             "buildingmaterial": true
         },
         {
@@ -3410,7 +3410,7 @@
             "description": "",
             "price": 100,
             "unit": "kilograms",
-            "amountowned": 546,
+            "amountowned": 566,
             "buildingmaterial": false
         },
         {
@@ -3419,7 +3419,7 @@
             "description": "",
             "price": 200,
             "unit": "cubic meters",
-            "amountowned": 24495.33333333334,
+            "amountowned": 24388.666666666675,
             "buildingmaterial": true
         },
         {
